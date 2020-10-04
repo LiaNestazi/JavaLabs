@@ -1,0 +1,32 @@
+package ru.mirea.lab3;
+
+public class Pug extends Dog{
+    protected String eartype;
+    protected String muztype;
+    public Pug(){
+        height=30;
+        weight=6;
+        fur="short";
+        eartype="hanging";
+        muztype="flattened";
+    }
+    public Pug(int height,int weight,String fur, String eartype, String muztype){
+        this.height=height;
+        this.weight=weight;
+        this.fur=fur;
+        this.eartype=eartype;
+        this.muztype=muztype;
+    }
+    public String getActivity(){
+        return "3/5";
+    }
+    public String getAbilityToTrain(){
+        return "2/5";
+    }
+    public String getFriendliness(){
+        return "4/5";
+    }
+    public String toString(){
+        return "Height:"+this.height+" Weight:"+this.weight+" Fur:"+this.fur+" Ears Type:"+this.eartype+" Muzzle Type:"+this.muztype;
+    }
+}
