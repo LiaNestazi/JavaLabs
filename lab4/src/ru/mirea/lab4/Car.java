@@ -4,7 +4,18 @@ public class Car implements Nameable{
     private String name;
     private int x,y;
     private int speed;
-
+    public Car(){
+        name="basic";
+        x=0;
+        y=0;
+        speed=0;
+    }
+    public Car(String name,int x, int y, int speed){
+        this.name=name;
+        this.x=x;
+        this.y=y;
+        this.speed=speed;
+    }
     public int getSpeed() {
         return speed;
     }

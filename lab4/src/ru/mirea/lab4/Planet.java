@@ -4,7 +4,16 @@ public class Planet implements Nameable{
     private String name;
     private double angle;
     private int speed;
-
+    public Planet(){
+        name="Earth";
+        angle=23.5;
+        speed=1675;
+    }
+    public Planet(String name, double angle, int speed){
+        this.name=name;
+        this.angle=angle;
+        this.speed=speed;
+    }
     public void setName(String name) {
         this.name = name;
     }
