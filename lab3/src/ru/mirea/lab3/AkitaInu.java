@@ -6,7 +6,7 @@ public class AkitaInu extends Dog{
         weight=30;
         fur="long";
     }
-    public AkitaInu(int height,int weight,String fur) {
+    public AkitaInu(double height,double weight,String fur) {
         this.height=height;
         this.weight=weight;
         this.fur=fur;
@@ -21,6 +21,9 @@ public class AkitaInu extends Dog{
         return "3/5";
     }
     public String toString(){
-        return "Height:"+this.height+" Weight:"+this.weight+" Fur:"+this.fur;
+        return "Height:"+this.height+" Weight:"+this.weight+" Fur:"+this.fur+
+                "\nActivity:"+getActivity()+
+                "\nAbility to train:"+getAbilityToTrain()+
+                "\nFriendliness:"+getFriendliness();
     }
 }
